@@ -1,7 +1,7 @@
 from random import randint
 from typing import Optional
 
-
+# TODO: Fix error ListNode is not iterable
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -50,21 +50,3 @@ class Solution:
                 nodes[i].next = nodes[i + 1]
             return nodes
     
-# linked_list1 = build_linked_list(3)
-# linked_list2 = build_linked_list(4)
-# print("FIRST LINKED LIST")
-# for node in linked_list1:
-    
-#     print(node.val)
-
-# print("SECOND LINKED LIST")
-# for node in linked_list2:
-    
-#     print(node.val)
-# # print("Con valores") if linked_list1 else print("Sin valores")
-# res = Solution.addTwoNumbers(Solution, linked_list1, linked_list2)
-
-# for node in res:
-    
-#     print(node.val)
-
