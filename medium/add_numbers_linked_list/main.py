@@ -15,9 +15,10 @@ class Solution:
         number_list2 = int(''.join(map(str, [node.val for node in l2])))
         sum = number_list1 + number_list2 
         print(f"The sum is {sum}")
-        return self.create_linked_list_from_number(self, result=sum)
+        return self.create_linked_list_from_number(result=sum)
 
-    def create_linked_list_from_number(self, result: int):
+    @staticmethod
+    def create_linked_list_from_number(result: int):
         
         # Convert the number into a string so it's easier to manipulate
         num_str = str(result)[::-1]
