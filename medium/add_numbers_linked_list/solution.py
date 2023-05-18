@@ -39,16 +39,16 @@ class Solution:
         # Return the head of the list
         return nodes
 
-
-# def build_linked_list(length):
-        
-#         head_val = 0
-#         while head_val == 0:
-#             head_val = randint(1, 9)
-#         nodes = [ListNode(randint(0, 9)) for _ in range(length)]
-#         for i in range(length - 1):
-#             nodes[i].next = nodes[i + 1]
-#         return nodes
+    @staticmethod
+    def build_linked_list(length):
+            
+            head_val = 0
+            while head_val == 0:
+                head_val = randint(1, 9)
+            nodes = [ListNode(randint(0, 9)) for _ in range(length)]
+            for i in range(length - 1):
+                nodes[i].next = nodes[i + 1]
+            return nodes
     
 # linked_list1 = build_linked_list(3)
 # linked_list2 = build_linked_list(4)
